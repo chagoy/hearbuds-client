@@ -104,7 +104,7 @@ class SingleEvent extends React.Component {
                 // Link to React Fragment docs: 
                 // https://reactjs.org/docs/fragments.html
                 <React.Fragment>
-                    <div className="container">
+                    <div className="event-container">
                         <div className="row">
                             <h1 className="center">{name}</h1>
                             <h3 className="center">Live at {venue.name} - {moment(dates.start.localDate).format("dddd, MMMM Do YYYY")}</h3>

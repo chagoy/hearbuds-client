@@ -1,5 +1,8 @@
-.container {
+.event-container {
   margin-bottom: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 #event-image {
