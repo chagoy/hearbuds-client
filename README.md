@@ -1,25 +1,55 @@
-# Knowtation
+# HearBuds
 
-## A spaced reptition app to learn Big O Notation
+## Revolutionizing the concert going experience.
 
-## Links
+HearBuds allows users to find concerts in their area and find someone to go with.
 
-<p><a href='https://knowtation-app.firebaseapp.com/'>Live App</a></p>
-<p>Test Credentials: username: angelo, password: password
-<p><a href='https://github.com/thinkful-ei21/knowtation-server'>Back End Code</a></p>
+_____________________
+## Link to the live version
+ [live app](https://hearbuds-dd37a.firebaseapp.com/)
+ <p><a href='https://github.com/chagoy/hearbuds-server'>server repo</a></p>
 
-----
+ ____________________
+ ## Screenshots
 
-## Set up
+![Landing Page](screenshots/desktop-landing-page.png)
+![Dashboard](screenshots/desktop-dashboard.png)
+![Single Event](screenshots/desktop-single-event.png)
 
-* Clone both this repo and the [back end repo](https://github.com/thinkful-ei21/knowtation-server)
-* cd into the front
-* run `npm install`
-* run `npm start`
-* cd into the back
-* run `npm install`
-* run `npm start`
+_____________________
 
-## Database
+## Tech stack
 
-The database uses MongoDB and is currently live hosted on mLab. You will need to add in your own questions.
+* HTML5
+* Cascading Style Sheet/Flex Box
+* JavaScript
+* NodeJS
+* GraphQL
+* MongoDB
+
+### Client-Side
+
+* React
+* React Redux
+* Redux Thunk
+* JWT-Decode
+* Deployed with Firebase
+
+### Server-Side
+
+* Express
+* Mongoose
+* Morgan
+* Passport
+* JSONWedToken
+* Bcryptjs
+* Deployed with Zeit
+
+## Dev setup
+
+* Clone both repos (this one and the [Server Repo](https://github.com/thinkful-ei21/hearbuds-server))
+
+* Once you have them cloned run `npm install` on both in order to get all dependancies.
+
+* Run `npm start` to get the app running locally
+
