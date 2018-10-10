@@ -10,18 +10,26 @@ h2 {
     margin: 0 auto;
 }
 
-form {
+.login-form {
     width: 34%;
-    /*padding: 40px;*/
     margin: 25px auto;
     background-color: white;
-    /*border: 1px solid  #f1b879;*/
-    /*border-radius: 3%;*/
     padding: 20px 35px;
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
-    /* attempt at putting in an accent border
-    not really liking any colors so far
-    border-top: 3px solid red;*/
+}
+
+.login-button {
+    width: 100%;
+    height: 38px;
+    background: none;
+    border: 2px solid #48343A;
+    color: #48343A;
+    font-size: 1rem;
+}
+
+.login-button:hover {
+    background: #48343A;
+    color: #ececec;
 }
 
 label {
@@ -58,16 +66,6 @@ a {
     color: #f5f1df;
 }
 
-button .login-button {
-    color: #f5f1df;
-    padding: 9px 9px;
-    background-color: rgb(72,52,58);
-    border: 1px solid #f5f1df;
-    /*border-radius: 3%;*/
-    width: 100%;
-    font-size: 1.4rem;
-}
-
 .register-link {
     color: rgb(72,52,58);
     width: 50px;
@@ -82,18 +80,17 @@ button .login-button {
 }
 
 @media only screen and (max-width: 600px) {
-    form {
-        width: 200px;
-        margin: 50px auto;
-        
+    .login-form {
+        width: 90%;
+        padding: 0;
+        box-sizing: border-box;
     }
     
     .input-container {
-        width: 140px;
         margin: 0 auto;
     }
 
     .form-input {
-        width: 100%;
+        width: 88%;
     }
 }

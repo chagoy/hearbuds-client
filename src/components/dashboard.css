@@ -2,3 +2,8 @@
 body {
 	background: none;
 }
+
+.dashboard {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}

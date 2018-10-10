@@ -1,16 +1,15 @@
 import React from 'react';
-import {Field, reduxForm} from 'redux-form';
+import {Field, reduxForm, reset} from 'redux-form';
 import Input from './input';
 import {setComment} from '../actions/comments';
-import {reset} from 'redux-form';
+require('./add-comment.css');
 
 export class AddComment extends React.Component {
 
 	onSubmit(values) {
 		const {body} = values;
-		
-		this.props.dispatch(setComment(body));
-		this.props.dispatch(reset('comment'));
+		console.log(body)
+		return this.props.dispatch(setComment(body))
 	}
 
 	render() {
@@ -24,8 +23,10 @@ export class AddComment extends React.Component {
 					component={Input}
 					type="text"
 					name="body"
+					inputClass='commentInput'
 				/>
 				<button
+					className='comment-button'
 					type="submit"
 					disabled={this.props.pristine || this.props.submitting}>
 					Submit
@@ -35,6 +36,10 @@ export class AddComment extends React.Component {
 	}
 }
 
+const afterSubmit = (result, dispatch) => dispatch(reset('comment'));
+
 export default reduxForm({
-	form: 'comment'
+	form: 'comment',
+	onSubmitSuccess: afterSubmit
+
 })(AddComment);

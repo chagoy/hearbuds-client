@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
-
 import Nav from './nav';
 import LandingPage from './landing-page';
 import Dashboard from './dashboard';
@@ -10,6 +9,7 @@ import EditPage from './edit-page';
 import LoginPage from './login-page';
 import {refreshAuthToken} from '../actions/auth';
 import SingleEvent from './single-event';
+import Footer from './footer';
 
 
 export class App extends React.Component {
@@ -53,6 +53,7 @@ export class App extends React.Component {
                 <Route exact path="/edit" component={EditPage} />
                 <Route exact path="/dashboard/:id" component={SingleEvent} />
                 <Route exact path="/peek/:zipcode" component={Dashboard} />
+                <Footer />
             </div>
         );
     }

@@ -110,7 +110,7 @@ class SingleEvent extends React.Component {
                             <h3 className="center">Live at {venue.name} - {moment(dates.start.localDate).format("dddd, MMMM Do YYYY")}</h3>
                             <div className="rsvp-message center">
                                 <p>{message}</p>
-                                <button onClick={() => this.rsvp()}>{rsvpButton}</button>
+                                <button className='rsvp-button' onClick={() => this.rsvp()}>{rsvpButton}</button>
                             </div>
                             <p className="right">
                                 <a href={ticketLink}>Buy Tickets</a>
@@ -122,7 +122,7 @@ class SingleEvent extends React.Component {
                                 {bandLinkXml}
                             </div>
                             <div className="col-6 attending center">
-                                <p>Who's going?</p>
+                                <p className='rsvp-title'>Who's going?</p>
                                 <ul className="rsvp-list">
                                     {rsvpList}
                                 </ul>                                                 

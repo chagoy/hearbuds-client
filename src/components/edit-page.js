@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link, Redirect} from 'react-router-dom';
-
+import {Redirect} from 'react-router-dom';
 import EditForm from './edit-form';
 
 export function EditPage(props) {
@@ -14,7 +13,6 @@ export function EditPage(props) {
         <div className="home">
             <h2>Update Your Information</h2>
             <EditForm />
-            <Link to="/dashboard">Cancel</Link>
         </div>
     );
 }

@@ -17,6 +17,7 @@ body {
   top: 0;
   font-size: 100%;
   font-family: 'M PLUS 1p', sans-serif;
+  min-height: 500px;
 }
  
 #spinner {
@@ -31,6 +32,11 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 a {
   color: #c67749;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .left {
@@ -215,6 +221,28 @@ a {
   }
 }
 
+.footer {
+  height: 100px;
+  background-color: #48343A;
+  display: flex;
+  align-items: center;
+}
 
+#footer-text {
+  color: #ececec;
+  margin: 0 auto;
+}
 
+.login-link {
+  color: #48343A;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.navigation-link {
+  text-align: center;
+  margin: 0 auto;
+}
 

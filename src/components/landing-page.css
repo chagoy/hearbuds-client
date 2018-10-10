@@ -2,6 +2,12 @@
 	position: relative;
 	width: 100%;
 	text-align: center;
+	background: url('https://s3.amazonaws.com/fasfawefaf/yvette-de-wit-118721-unsplash.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	/*height: 100vh;*/
+	min-height: 100vh;
 }
 
 .background-image {
@@ -89,6 +95,12 @@ button.zipcode-search-button {
 
 button.zipcode-search-button:hover {	
 	font-size: 1.6rem;
+}
+
+.landing-form {
+	background: none;
+	padding: 0;
+	margin-top: 0;
 }
 
 @media only screen and (min-width: 650px) {

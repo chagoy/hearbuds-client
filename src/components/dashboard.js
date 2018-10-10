@@ -15,15 +15,8 @@ export class Dashboard extends React.Component {
             return <Redirect to="/" />;
         }
 
-        let greeting;
-        if(this.props.username) {
-            greeting = <h2>Welcome back, {this.props.username.username}!</h2>
-        } else {
-            greeting = <h2>Welcome!</h2>
-        }
         return (
-            <div>
-                {greeting}
+            <div className='dashboard'>
                 <EventList zipcode={this.props.match.params.zipcode}/>
             </div>
         );

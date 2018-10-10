@@ -1,6 +1,7 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
+import { Link } from 'react-router-dom';
 import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 
@@ -44,8 +45,12 @@ export class LoginForm extends React.Component {
                         />
                     <div className="form-input">
                         <button className="login-button" disabled={this.props.pristine || this.props.submitting}>
-                            Log in
+                            Login
                         </button>
+                        <p>Demo Credentials: username: <em>angelo</em> password: <em>password10</em></p>
+                    </div>
+                    <div className='navigation-link'>
+                        <Link className="login-link" to="/login">Register</Link>
                     </div>
                 </div>
             </form>

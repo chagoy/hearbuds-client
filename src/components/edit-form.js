@@ -5,9 +5,11 @@ import {editUser} from '../actions/users';
 import {login} from '../actions/auth';
 import Input from './input';
 import {required, nonEmpty, matches, length, isTrimmed} from '../validators';
+import {Link, Redirect} from 'react-router-dom';
 const passwordLength = length({min: 10, max: 72});
 const zipLength = length({min:5, max:5});
 const matchesPassword = matches('password');
+require('./edit-form.css');
 
 export class EditForm extends React.Component {
 
@@ -75,11 +77,18 @@ export class EditForm extends React.Component {
                     name="passwordConfirm"
                     validate={[required, nonEmpty, matchesPassword]}
                 />
-                <button
-                    type="submit"
-                    disabled={this.props.pristine || this.props.submitting}>
-                    Update Information
-                </button>
+                <div className='form-input'>
+                    <button
+                        className='login-button'
+                        type="submit"
+                        disabled={this.props.pristine || this.props.submitting}>
+                        Update Information
+                    </button>
+                </div>
+
+                <div className='navigation-link'>
+                    <Link to="/dashboard">Cancel</Link>
+                </div>
             </form>
         );
     }

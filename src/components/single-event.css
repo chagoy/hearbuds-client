@@ -1,4 +1,6 @@
-
+.container {
+  margin-bottom: 15px;
+}
 
 #event-image {
 	width: 100%;
@@ -7,4 +9,28 @@
 .attending {
 	box-sizing: border-box;
 	border: 1px solid black;
+}
+
+.rsvp-button {
+	width: 25%;
+  height: 40px;
+  border: 2px solid #48343A;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+  font-size: 0.9em;
+}
+
+.rsvp-button:hover {
+	box-shadow: 0 0 3px rgba(0, 0, 0, .8);
+}
+
+.rsvp-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 676px) {
+    .rsvp-button {
+        font-size: 0.8rem;
+        width: 40%;
+    }
 }

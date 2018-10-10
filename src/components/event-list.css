@@ -10,13 +10,13 @@
 .info-button {
     width: 100%;
     height: 40px;
-    border: 2px solid white;
+    border: 2px solid #48343A;
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     font-size: 1.1rem;
 }
 
 .info-button:hover {
-	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .8);
 }
 
 .event-details {
@@ -30,4 +30,14 @@
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+}
+
+.paginate-button {
+    border: 2px solid #48343A;
+    padding: 5px 16px;
+}
+
+.paginate-button:hover {
+    background-color: #48343a;
+    color: #ececec;
 }
