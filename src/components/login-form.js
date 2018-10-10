@@ -50,7 +50,7 @@ export class LoginForm extends React.Component {
                         <p>Demo Credentials: username: <em>angelo</em> password: <em>password10</em></p>
                     </div>
                     <div className='navigation-link'>
-                        <Link className="login-link" to="/login">Register</Link>
+                        <Link className="login-link" to="/register">Register</Link>
                     </div>
                 </div>
             </form>
