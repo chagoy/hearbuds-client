@@ -5,7 +5,7 @@
 HearBuds allows users to find concerts in their area and find someone to go with.
 
 _____________________
-## Link to the live version
+## Links
  [live app](https://hearbuds-dd37a.firebaseapp.com/)
  <p><a href='https://github.com/chagoy/hearbuds-server'>server repo</a></p>
 
